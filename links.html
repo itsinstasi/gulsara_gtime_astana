@@ -68,7 +68,7 @@
 						<div class="header__title">gulsara_gtime_astana</div>
 					</div>
 					<div id="settingsContainer" class="header__right" style="display:none">
-						<button onclick="window.open('http://itsinsta.site/page.html?project=gulsara_gtime_astana');" class="btn stories-popup__buy">Настроить</button>
+						<button onclick="window.open('http://itsinsta.site/page.html?project=gulsara_gtime_astana', '_self');" class="btn stories-popup__buy">Настроить</button>
 					</div>
 				</div>
 			</div>
@@ -189,7 +189,7 @@ color: #FFFFFF;
 
 
 						<div class="links-page-btn-pic">
-							<center><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/80581349_1080193398979664_31939455677241589_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108&_nc_ohc=cuw5hNDjmOsAX9Q8FTV&oh=dee24f3cb6b760a28dc799efc830b212&oe=5ED7EA4C" alt="">
+							<center><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/80581349_1080193398979664_31939455677241589_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108&_nc_ohc=WMlEAcYcXNEAX-resFc&oh=f1782466cd2e65ac420bfa76103e9278&oe=5ED7EA4C" alt="">
 							</img></center>
 						</div>
 
@@ -266,7 +266,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 $(document).ready(function(){
 	var lid = getUrlParameter("lid");
-	if (lid) {
+	if (lid && lid != "true") {
         localStorage.setItem("hasToken", true);
 
 		$("#settingsContainer").show();
